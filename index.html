@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge Top-Up</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Recharge Top-Up</h1>
+    </header>
+    <main>
+        <form id="recharge-form">
+            <label for="user-id">Votre ID utilisateur :</label>
+            <input type="text" id="user-id" name="user-id" placeholder="Entrez votre ID" required>
+
+            <label for="service">Choisissez un service :</label>
+            <select id="service" name="service">
+                <option value="freefire">Free Fire</option>
+                <option value="pubg">PUBG</option>
+                <option value="mobile-legends">Mobile Legends</option>
+            </select>
+
+            <label for="amount">Montant à recharger :</label>
+            <input type="number" id="amount" name="amount" min="10" step="10" placeholder="Exemple : 100" required>
+
+            <button type="submit">Recharger</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Recharge Top-Up</p>
+    </footer>
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript -->
+</body>
+</html>
